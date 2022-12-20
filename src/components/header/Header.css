@@ -1,0 +1,181 @@
+.header {
+  height: 60px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-800);
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle-wrapper {
+  width: 62px;
+  display: block;
+  padding: 0 16px;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-700);
+}
+
+.menu-toggle-wrapper input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.menu-toggle-wrapper span {
+  display: block;
+  width: 36px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 0 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* middle span */
+.menu-toggle-wrapper input:checked ~ span:nth-last-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+/* first span */
+.menu-toggle-wrapper input:checked ~ span:nth-last-child(3) {
+  transform: rotate(45deg) translate(0px, -5px);
+}
+/* last span */
+.menu-toggle-wrapper input:checked ~ span:nth-last-child(1) {
+  transform: rotate(-45deg) translate(-3px, 5px);
+}
+
+.logo {
+  margin: 0;
+  padding: 10px 30px;
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  border-right: 1px solid var(--clr-500);
+  text-transform: uppercase;
+}
+
+.doc-infos {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.doc-infos-icon {
+  margin: 0 14px;
+  font-size: 1.5rem;
+}
+
+.doc-infos-name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.doc-infos-name label {
+  color: var(--clr-500);
+  font-size: 14px;
+}
+
+.doc-infos-name input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--clr-100);
+  font-size: 15px;
+  max-width: 300px;
+  font-family: var(--font-primary);
+}
+
+.doc-infos-name input::placeholder {
+  color: var(--clr-100);
+}
+
+.doc-infos-name input:hover {
+  box-shadow: 0 1px 0 var(--accent);
+}
+
+.doc-infos-name input:focus {
+  box-shadow: 0 1px 0 var(--accent);
+  caret-color: var(--accent);
+}
+
+button {
+  cursor: pointer;
+}
+
+button .icon {
+  font-size: 24px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+button.modal-toggle {
+  background: transparent;
+  color: var(--clr-500);
+  padding: 10px 12px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+button.modal-toggle:hover {
+  background-color: var(--clr-900);
+}
+
+button.save-doc {
+  font-size: 14px;
+  padding: 8px 10px;
+  background-color: var(--accent);
+  color: var(--clr-100);
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+button.save-doc:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 48em) {
+  .logo {
+    display: none;
+  }
+
+  .doc-infos label {
+    display: none;
+  }
+
+  button.save-doc {
+    font-size: 0;
+  }
+}

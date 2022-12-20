@@ -1,0 +1,22 @@
+.doc-item {
+  background-color: var(--clr-600);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.doc-item .doc-item-name {
+  color: var(--clr-100);
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.doc-item .doc-item-date {
+  color: var(--clr-800);
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "welcome",
+    "content": "# Welcome to Markdown 👋\n\n## What is markdown?\n\n**Markdown** is a simple way to format text that looks great on any device. It doesn't do anything fancy like change the font size, color, or type — just the essentials, using keyboard symbols you already know.\n\n> This is an example of a blockquote. If you would like to learn more about markdown syntax, here's a markdown [cheatsheet](https://commonmark.org/help/).\n\n| Heading 1    | Heading 2    | Heading 3    |\n| ------------ | ------------ | ------------ |\n| First row 1  | First row 2  | First row 3  |\n| Second row 1 | Second row 2 | Second row 3 |\n| Third row 1  | Third row 2  | Third row 3  |\n\n```JS\nimport { useState } from 'react'\n\nfunction App() {\n  const [count, setCount] = useState(0)\n\n  const handleClick = () => {\n    count + 1\n  }\n\n  return (\n    <div className='App'>\n      <h1>Hello World!</h1>\n      <button onClick={handleClick}>\n        {count}\n      </button>\n    </div>\n  )\n}\n\nexport default App\n```\n\n## Tech stack\n\nMarkdown is powered by a few technologies to get the job done:\n\n- [ViteJS](vitejs.dev) - A build tool for a faster development experience\n- [ReactJS](reactjs.org) - A JavaScript library for building user interfaces\n- [react-markdown](https://github.com/remarkjs/react-markdown) - A markdown component for React",
+    "id": "0",
+    "lastModified": "11/11/2022"
+  }
+]

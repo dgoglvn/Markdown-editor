@@ -1,0 +1,7 @@
+.main {
+  transition: 0.4s;
+}
+
+.main.open-menu {
+  transform: translateX(275px);
+}
