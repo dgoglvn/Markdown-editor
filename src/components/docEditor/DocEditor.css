@@ -306,8 +306,18 @@ a {
   background-color: var(--clr-800);
 }
 
+.preview.dark .preview-content pre code {
+  background: none;
+  color: var(--clr-300);
+}
+
 .preview.dark .preview-content code {
   color: var(--clr-300);
+}
+
+.preview.dark .preview-content code {
+  color: #fcf1e5;
+  background-color: var(--clr-600);
 }
 
 .preview.dark .preview-content h1,
