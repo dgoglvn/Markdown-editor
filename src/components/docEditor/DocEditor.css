@@ -187,9 +187,19 @@
   white-space: pre-wrap;
 }
 
-.preview-content code {
-  font-family: monospace;
+.preview-content pre code {
+  color: var(--clr-900);
   font-size: 14px;
+  background: none;
+}
+
+.preview-content code {
+  padding: 2px 4px;
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--accent);
+  background-color: #fcf3ef;
+  border-radius: 4px;
 }
 
 .preview-content h1,
