@@ -19,7 +19,7 @@ function App() {
       <ToastContainer
         autoClose={1000}
         hideProgressBar="true"
-        theme={`${theme === "dark" ? "dark" : ""}`}
+        theme={`${theme === "dark" ? "dark" : "light"}`}
       />
       <MarkdownProvider>
         <Sidebar toggleMenu={toggleMenu} />
